@@ -48,6 +48,9 @@ export default async function Home() {
           />
         </div>
       </div>
+      <div className="bg-red-200 w-[300px] h-[300px] p-20">
+        <div className="w-full h-full bg-gray-50"></div>
+      </div>
     </main>
   );
 }
