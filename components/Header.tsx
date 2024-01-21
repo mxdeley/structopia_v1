@@ -4,6 +4,8 @@ import React from "react";
 import { Button } from "./ui/button";
 import { UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs";
+import Nav from "./Nav";
+import NavSignIn from "./NavSignIn";
 
 export default async function Header() {
   const user = await currentUser();
@@ -15,24 +17,7 @@ export default async function Header() {
           <Image src={"/red-cube.png"} width={25} height={1} alt="Logo" />
         </Link>
 
-        <div className="text-sm flex items-center space-x-2">
-          <nav className="flex space-x-4">
-            <Link href={"/eurocodes"}>Eurocodes</Link>
-            <Link href={"#"}>Tools</Link>
-            <Link href={"#"}>Resources</Link>
-            <Link href={"#"}>Pricing</Link>
-          </nav>
-          <Link href={"/sign-in"}>
-            <Button variant={"ghost"} className="h-fit">
-              Login
-            </Button>
-          </Link>
-          <Link href={"/sign-up"}>
-            <Button variant={"outline"} className="text-zinc-950 h-fit">
-              Sign Up
-            </Button>
-          </Link>
-        </div>
+        <Nav />
       </header>
     );
   return (
@@ -42,12 +27,7 @@ export default async function Header() {
         <Image src={"/red-cube.png"} width={25} height={1} alt="Logo" />
       </Link>
       <div className="text-sm flex items-center space-x-4">
-        <nav className="flex space-x-4">
-          <Link href={"/eurocodes"}>Eurocodes</Link>
-          <Link href={"#"}>Tools</Link>
-          <Link href={"#"}>Resources</Link>
-          <Link href={"#"}>Pricing</Link>
-        </nav>
+        <NavSignIn />
         <UserButton afterSignOutUrl="/" />
       </div>
     </header>
