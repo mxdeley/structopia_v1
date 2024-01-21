@@ -98,14 +98,17 @@ const NavSignIn = () => {
             <NavigationMenuTrigger className="h-fit bg-transparent">
               <Link href={"/resources"}>Resources</Link>
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="grid w-[150px] gap-3 p-4 md:w-[150px] md:grid-cols-2 lg:w-[150px] bg-zinc-700 text-zinc-50">
+            <NavigationMenuContent className="grid w-[450px] gap-3 p-4 md:w-[450px] md:grid-cols-2 lg:w-[450px] bg-zinc-700 text-zinc-50">
               <Link href={"/resources/examples"}>
-                <h2 className="text-center">Examples</h2>
+                <h2 className="text-left">Examples</h2>
+              </Link>
+              <Link href={"/resources/steel-encylopedia"}>
+                <h2 className="text-left">Steel Encylopedia</h2>
               </Link>
             </NavigationMenuContent>
           </NavigationMenuItem>
         </NavigationMenu>
-
+        <Link href={"#"}>Forum</Link>
         <Link href={"#"}>Pricing</Link>
       </nav>
     </div>

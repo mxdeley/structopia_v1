@@ -11,7 +11,7 @@ export default async function Header() {
   const user = await currentUser();
   if (!user)
     return (
-      <header className="w-full flex justify-between items-center inset-x-0 mx-auto p-4 fixed top-0 max-w-6xl">
+      <header className="w-full flex justify-between items-center inset-x-0 mx-auto p-4 sticky top-0 max-w-6xl">
         <Link href={"/"} className="flex items-center space-x-2">
           <h1>Structopia</h1>
           <Image src={"/red-cube.png"} width={25} height={1} alt="Logo" />
