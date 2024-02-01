@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { currentUser } from "@clerk/nextjs";
+import { MedalIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,15 +8,24 @@ export default async function Home() {
   const user = await currentUser();
 
   return (
-    <main className="max-w-7xl mx-auto">
-      <div className="flex items-center justify-between p-10 pt-40">
-        <div className="space-y-4">
-          <h1 className="text-6xl font-bold">
+    <main className="mx-auto items-center flex flex-col justify-center ">
+      <div className="flex items-center justify-center p-10 pt-40 w-full text-center ">
+        <div className="space-y-4 flex flex-col justify-center text-center mx-auto">
+          <div className="bg-yellow-100 w-44 flex text-center justify-center space-x-3 mx-auto items-center p-3">
+            <MedalIcon className="text-yellow-600" />
+            <h1 className="text-yellow-600">No.1 Assistant</h1>
+          </div>
+          <h1 className="text-5xl font-bold text-center">
             Your Structural Engineering{" "}
-            <span className="bg-gradient-to-t to-red-800 from-red-400 inline-block text-transparent bg-clip-text">
-              Assistant
-            </span>
           </h1>
+          <div className="w-[30rem] flex justify-center mx-auto">
+            <div className="p-4 px-6 bg-red-600 text-center">
+              <span className=" inline-block text-center bg-clip-text text-8xl">
+                Assistant
+              </span>
+            </div>
+          </div>
+
           <p>
             Structopia will 10x your design workflow, organise your projects and
             assist you in everyday calculations.
@@ -38,16 +48,26 @@ export default async function Home() {
             </p>
           )}
         </div>
-        <div>
-          <Image
-            src={"/steel-frame.png"}
-            width={1000}
-            height={400}
-            alt="steel-frame"
-          />
-        </div>
       </div>
-      <div className="w-full flex flex-col text-center space-y-8 items-center">
+      <div className="justify-between w-full -mt-44 hidden md:flex -z-50">
+        <Image
+          src={"/digger2.svg"}
+          width={400}
+          height={400}
+          alt="Test"
+          className="transform -scale-x-100 -z-50"
+        />
+        <Image
+          src={"/bobcat.svg"}
+          width={400}
+          height={200}
+          alt="Test"
+          className=" mt-[5rem] -z-50"
+        />
+      </div>
+
+      <div className="bg-zinc-300 w-full md:-mt-24">Test</div>
+      {/* <div className="w-full flex flex-col text-center space-y-8 items-center">
         <h1 className="text-4xl font-bold">
           Sign Up Below to Join Our Weekly{" "}
           <span className="bg-gradient-to-t to-red-800 from-red-400 inline-block text-transparent bg-clip-text">
@@ -81,7 +101,7 @@ export default async function Home() {
           This site and blog was born out of repeated questions or problems to
           which I or friends did not find simple and quick solutions online.
         </p>
-      </div>
+      </div> */}
     </main>
   );
 }
