@@ -119,7 +119,7 @@ const Nav = () => {
       </nav>
       <Link href={"/sign-in"}>
         <Button variant={"ghost"} className="h-fit">
-          Login
+          Logins
         </Button>
       </Link>
       <Link href={"/sign-up"}>
