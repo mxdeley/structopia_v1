@@ -143,7 +143,7 @@ export default async function Home() {
           height={200}
           width={200}
           alt="caliper"
-          className="absolute z-50"
+          className="absolute z-30"
           style={{
             top: "-10%",
             right: "0%",
@@ -154,7 +154,7 @@ export default async function Home() {
           height={200}
           width={200}
           alt="caliper"
-          className="absolute z-50"
+          className="absolute z-30"
           style={{
             top: "70%",
             left: "0%",
