@@ -66,14 +66,14 @@ export default async function Home() {
           width={400}
           height={400}
           alt="Test"
-          className="transform -scale-x-100 -z-50"
+          className="transform -scale-x-100"
         />
         <Image
           src={"/bobcat.svg"}
           width={400}
           height={200}
           alt="Test"
-          className=" mt-[5rem] -z-50"
+          className=" mt-[5rem]"
         />
       </div>
 
