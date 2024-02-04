@@ -117,16 +117,19 @@ const Nav = () => {
         <Link href={"#"}>Forum</Link>
         <Link href={"#"}>Pricing</Link>
       </nav>
-      <Link href={"/sign-in"}>
+      <Button variant={"ghost"} className="h-fit">
+        Closed Beta
+      </Button>
+      {/* <Link href={"/sign-in"}>
         <Button variant={"ghost"} className="h-fit">
-          Logins
+          Login
         </Button>
       </Link>
       <Link href={"/sign-up"}>
         <Button variant={"outline"} className="text-zinc-950 h-fit">
           Sign Up
         </Button>
-      </Link>
+      </Link> */}
     </div>
   );
 };

@@ -19,8 +19,8 @@ export default async function Home() {
             Your Structural Engineering{" "}
           </h1>
           <div className="w-[30rem] flex justify-center mx-auto">
-            <div className="p-4 px-6 bg-red-600 text-center">
-              <span className=" inline-block text-center bg-clip-text text-8xl">
+            <div className="py-2 px-6 bg-red-600 text-center">
+              <span className=" inline-block text-center bg-clip-text text-8xl tracking-tighter">
                 Assistant
               </span>
             </div>
@@ -30,7 +30,12 @@ export default async function Home() {
             Structopia will 10x your design workflow, organise your projects and
             assist you in everyday calculations.
           </p>
-          {!user ? (
+          <p>
+            <Button variant={"outline"} className="text-zinc-950 h-fit">
+              Closed Beta
+            </Button>
+          </p>
+          {/* {!user ? (
             <p>
               <Link href={"/sign-up"}>
                 <Button variant={"outline"} className="text-zinc-950 h-fit">
@@ -46,7 +51,7 @@ export default async function Home() {
                 </Button>
               </Link>
             </p>
-          )}
+          )} */}
         </div>
       </div>
       <div className="justify-between w-full -mt-44 hidden md:flex -z-50">
@@ -66,7 +71,96 @@ export default async function Home() {
         />
       </div>
 
-      <div className="bg-zinc-300 w-full md:-mt-24">Test</div>
+      <div className="bg-zinc-300 w-full md:-mt-24">
+        <div className="flex flex-col py-12">
+          <h2 className="text-center">Structopia Replaces...</h2>
+          <div className="flex w-full max-w-6xl mx-auto justify-between">
+            <Image src={"/asana.svg"} width={100} height={100} alt="asana" />
+            <Image src={"/skyciv.svg"} width={150} height={150} alt="skyciv" />
+            <Image src={"/monday.svg"} width={100} height={100} alt="monday" />
+            <Image
+              src={"/clickup.svg"}
+              width={150}
+              height={150}
+              alt="clickup"
+            />
+            <Image src={"/tedds.svg"} width={100} height={100} alt="tedds" />
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-zinc-300 w-full py-6 relative pb-24">
+        <div className="bg-zinc-300 flex max-w-6xl mx-auto relative">
+          <div className="flex-1 flex-col space-y-4 py-4 pr-4">
+            <div className="flex flex-col space-y-2">
+              <h2 className="text-xl font-bold">Project Management</h2>
+              <p className="text-sm">
+                Infinitim is a renowned digital marketing agency that leverages
+                cutting-edge technology to drive data-informed strategies,
+                establishing our competitive edge. We are the trusted choice for
+                unicorn startups, and internet enterprises who seek to unlock
+                their digital potential and achieve remarkable success.
+              </p>
+            </div>
+            <div className="flex flex-col space-y-2">
+              <h2 className="text-xl font-bold">File Organisation</h2>
+              <p className="text-sm">
+                Infinitim is a renowned digital marketing agency that leverages
+                cutting-edge technology to drive data-informed strategies,
+                establishing our competitive edge. We are the trusted choice for
+                unicorn startups, and internet enterprises who seek to unlock
+                their digital potential and achieve remarkable success.
+              </p>
+            </div>
+            <div className="flex flex-col space-y-2">
+              <h2 className="text-xl font-bold">Calculations</h2>
+              <p className="text-sm">
+                Infinitim is a renowned digital marketing agency that leverages
+                cutting-edge technology to drive data-informed strategies,
+                establishing our competitive edge. We are the trusted choice for
+                unicorn startups, and internet enterprises who seek to unlock
+                their digital potential and achieve remarkable success.
+              </p>
+            </div>
+            <div className="flex flex-col space-y-2">
+              <h2 className="text-xl font-bold">Eurocodes</h2>
+              <p className="text-sm">
+                Infinitim is a renowned digital marketing agency that leverages
+                cutting-edge technology to drive data-informed strategies,
+                establishing our competitive edge. We are the trusted choice for
+                unicorn startups, and internet enterprises who seek to unlock
+                their digital potential and achieve remarkable success.
+              </p>
+            </div>
+          </div>
+          <div className="w-[45%] flex space-x-3 p-4">
+            <div className="bg-zinc-400 h-full w-2 rounded-full"></div>
+            <div className="bg-zinc-400 h-full w-full rounded-lg"></div>
+          </div>
+        </div>
+        <Image
+          src={"/caliper.svg"}
+          height={200}
+          width={200}
+          alt="caliper"
+          className="absolute z-50"
+          style={{
+            top: "-10%",
+            right: "0%",
+          }}
+        />
+        <Image
+          src={"/helmet.svg"}
+          height={200}
+          width={200}
+          alt="caliper"
+          className="absolute z-50"
+          style={{
+            top: "70%",
+            left: "0%",
+          }}
+        />
+      </div>
       {/* <div className="w-full flex flex-col text-center space-y-8 items-center">
         <h1 className="text-4xl font-bold">
           Sign Up Below to Join Our Weekly{" "}
