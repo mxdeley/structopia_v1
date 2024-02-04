@@ -18,7 +18,7 @@ export default async function Header() {
       </header>
     );
   return (
-    <header className="px-60 mx-auto flex justify-between items-center p-4 bg-zinc-50 z-50">
+    <header className="px-60 mx-auto flex justify-between items-center p-4 bg-zinc-50 z-[99999]">
       <Link href={"/"} className="flex items-center space-x-2">
         <h1>Structopia</h1>
         <Image src={"/red-cube.png"} width={25} height={1} alt="Logo" />
