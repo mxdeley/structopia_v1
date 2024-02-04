@@ -4,6 +4,13 @@ import { MedalIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 export default async function Home() {
   const user = await currentUser();
 
@@ -186,6 +193,46 @@ export default async function Home() {
           />
         </div>
       </div>
+      <div className="bg-zinc-950 w-full py-12 flex flex-col space-y-8 mt-12">
+        <div className="w-[40rem] flex justify-center mx-auto">
+          <div className="py-2 px-6 bg-red-600 text-center">
+            <span className=" inline-block text-center bg-clip-text text-6xl tracking-tighter text-zinc-50">
+              Automate Calculations
+            </span>
+          </div>
+        </div>
+        <div className="w-1/2 text-zinc-50 mx-auto">
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Can I save my calculations?</AccordionTrigger>
+              <AccordionContent>
+                Yes. You will be able to save your calculations as a PDF.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger>
+                Will the calcs abide to Eurocode?
+              </AccordionTrigger>
+              <AccordionContent>
+                Yes. It comes with default styles that matches the other
+                components&apos; aesthetic.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>
+                What materials will be available?
+              </AccordionTrigger>
+              <AccordionContent>
+                Yes. It&apos;s animated by default, but you can disable it if
+                you prefer.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
+      </div>
+      <footer className="footer p-10 bg-zinc-950 text-zinc-50 w-full">
+        @Structopia
+      </footer>
       {/* <div className="w-full flex flex-col text-center space-y-8 items-center">
         <h1 className="text-4xl font-bold">
           Sign Up Below to Join Our Weekly{" "}
