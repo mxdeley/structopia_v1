@@ -8,7 +8,7 @@ export default async function Header() {
   const user = await currentUser();
   if (!user)
     return (
-      <header className="w-full flex justify-between items-center inset-x-0 mx-auto p-4 sticky top-0 px-60 bg-zinc-50/50 backdrop-blur-xl">
+      <header className="w-full flex justify-between items-center inset-x-0 mx-auto p-4 sticky top-0 px-60 bg-zinc-50/50 backdrop-blur-xl z-50">
         <Link href={"/"} className="flex items-center space-x-2">
           <h1>Structopia</h1>
 
