@@ -1,11 +1,4 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import "./eurocodes.css";
-
-const inter = Roboto({
-  weight: ["100", "300", "400", "500"],
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="bg-eurocodes">{children}</body>
     </html>
   );
 }

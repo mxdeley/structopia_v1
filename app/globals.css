@@ -74,3 +74,11 @@
     @apply bg-zinc-50 text-zinc-950;
   }
 }
+
+.bg-marketing {
+  @apply bg-zinc-50 text-zinc-950; /* Example color */
+}
+
+.bg-eurocodes {
+  @apply bg-zinc-900 text-zinc-50; /* Example color */
+}

@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { currentUser } from "@clerk/nextjs";
 import { MedalIcon } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 import {
   Accordion,
