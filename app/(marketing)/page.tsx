@@ -89,8 +89,8 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="bg-zinc-300 w-full py-6 relative pb-24">
-        <div className="bg-zinc-300 flex max-w-6xl mx-auto relative">
+      <div className="bg-zinc-300 w-full py-6 relative pb-24 z-1">
+        <div className="bg-zinc-300 flex max-w-6xl mx-auto">
           <div className="flex-1 flex-col space-y-4 py-4 pr-4">
             <div className="flex flex-col space-y-2">
               <h2 className="text-xl font-bold">Project Management</h2>
@@ -160,6 +160,31 @@ export default async function Home() {
             left: "0%",
           }}
         />
+      </div>
+      <div className="flex flex-col justify-center py-12 space-y-8">
+        <h1 className="text-center text-3xl font-bold">
+          Design Calculations for All Members
+        </h1>
+        <Image src={"/elements.svg"} height={500} width={1000} alt="Elements" />
+      </div>
+      <div className="w-full flex justify-between">
+        <div className="flex flex-col justify-center mx-auto space-y-20">
+          <div className="items-center">
+            <h1 className="text-left text-6xl w-[38rem] font-[500]">
+              Structopia lets you quickly search the Eurocodes
+            </h1>
+          </div>
+
+          <Image src={"/map.svg"} width={800} height={300} alt="map" />
+        </div>
+        <div className="left-0">
+          <Image
+            src={"/eurocode_example.png"}
+            height={200}
+            width={600}
+            alt="eurocodes"
+          />
+        </div>
       </div>
       {/* <div className="w-full flex flex-col text-center space-y-8 items-center">
         <h1 className="text-4xl font-bold">
