@@ -60,7 +60,7 @@ export default async function Home() {
           )} */}
         </div>
       </div>
-      <div className="justify-between w-full -mt-44 hidden md:flex -z-50">
+      <div className="justify-between w-full -mt-44 hidden md:flex z-50">
         <Image
           src={"/digger2.svg"}
           width={400}

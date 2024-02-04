@@ -1,7 +1,5 @@
-import "./dashboard.css";
-
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
-  return <div>{children}</div>;
+  return <div className="bg-dashboard">{children}</div>;
 };
 
 export default DashboardLayout;
